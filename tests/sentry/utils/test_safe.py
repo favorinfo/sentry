@@ -4,7 +4,7 @@ from collections import OrderedDict
 from functools import partial
 import pytest
 
-from sentry.testutils import TestCase
+from unittest import TestCase
 from sentry.utils.canonical import CanonicalKeyDict
 from sentry.utils.safe import safe_execute, trim, trim_dict, get_path, set_path, \
     setdefault_path
