@@ -25,6 +25,6 @@ def pytest_configure(config):
 
 def pytest_collection_modifyitems(items):
     for item in items:
-        group_num = int(md5(item.location[0]).hexdigest(),
-                        16) % os.environ.get('TOTAL_TEST_GROUPS', 1)
+        total_groups = int(os.environ.get('TOTAL_TEST_GROUPS', 1))
+        group_num = int(md5(item.location[0]).hexdigest(), 16) % total_groups
         item.add_marker(getattr(pytest.mark, 'group_%s' % group_num))
