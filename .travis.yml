@@ -16,6 +16,9 @@ cache:
     - node_modules
     - "${HOME}/google-cloud-sdk"
 
+before_cache:
+  - rm -f "${HOME}/build/getsentry/sentry/node_modules/.cache"
+
 addons:
   apt:
     update: true
