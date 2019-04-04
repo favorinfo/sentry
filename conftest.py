@@ -11,7 +11,6 @@ pytest_plugins = [
 ]
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-NUM_TEST_GROUPS = 2
 
 
 def pytest_configure(config):

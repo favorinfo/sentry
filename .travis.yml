@@ -132,7 +132,7 @@ matrix:
       name: 'Backend [Postgres] (Django 1.8) (1/2)'
       env: TEST_SUITE=postgres DB=postgres DJANGO_VERSION=">=1.8,<1.9" TOTAL_TEST_GROUPS=2 TEST_GROUP=0
     - <<: *postgres_default
-      name: 'Backend [Postgres] (Django 1.8) (1/2)'
+      name: 'Backend [Postgres] (Django 1.8) (2/2)'
       env: TEST_SUITE=postgres DB=postgres DJANGO_VERSION=">=1.8,<1.9" TOTAL_TEST_GROUPS=2 TEST_GROUP=1
 
     # django 1.8 compatibility with migrations
